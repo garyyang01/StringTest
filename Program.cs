@@ -181,11 +181,11 @@ namespace StringTest
     {
         public readonly string TestString="TestString";
 
-        public readonly Trans Txn = new Trans(){PlayerAccountId = "1sbo74", PlayerCustId = 74, ExternalRefno = "text1234", Amount = 10.0m, Type = "Deposit"};
+        public readonly Trans Txn = new Trans(){PlayerAccountId = "123456", PlayerCustId = 123456, ExternalRefno = "text1234", Amount = 10.0m, Type = "Deposit"};
         [Benchmark]
         public void Case1_String_Add_With_Different_String()
         {
-            string s = string.Empty;
+            String s = String.Empty;
             for (int i = 0; i < 10; i++)
             {
                 s += i.ToString();
